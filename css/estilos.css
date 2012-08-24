@@ -1,0 +1,74 @@
+/* IMPORTANDO ESTILOS */
+/*@import url("fuentes.css");*/
+@import url("reset.css");
+@import url("clases.css");
+
+/* ESTILOS */
+body, p, h1, h2, h3, h4, h5, h6{ font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+strong{ font-weight:bold; }
+body{ background:url(../imagenes/fondo.gif) repeat;}
+#cabecera, #contenido, #footer{ width:100%; float:left; }
+#cabecera{height:185px; background:url(../imagenes/fondo_sup_menu.gif) repeat-x;}
+#footer{ height:150px; background:url(../imagenes/fondo_footer.gif); font-family:Verdana, Geneva, sans-serif;}
+.interior{ width:990px; margin:0 auto;}
+
+/* CABECERA */
+#cabecera_sup{ width:160px; height:35px; float:left; padding:5px 0 0 830px;}
+#cabecera_sup ul li{ margin: 0; padding:0; overflow: hidden; float:left;}
+#cabecera_sup ul a{ padding:5px; float:left; clear:both; font-size:18px; color:#CCCCCC; font-family:"Courier New", Courier, monospace;}
+
+#cabecera_inf{ width:990px; height:137px; float:left; padding:8px 0 0 0;}
+#cabecera_inf #cbinf_logo{ width:305px; float:left; padding:0 0 0 45px;}
+#cabecera_inf #cbinf_logo h1 a{ display:block; float:left; width:304px; height:131px; background-image:url(../imagenes/logo.png); text-indent:-1000em;}
+
+#cabecera_inf #cbinf_opcion{ width:540px; float:left; padding:85px 0 0 60px;}
+#cbinf_opcion ul li{ margin: 0; padding:0 20px; overflow: hidden; float:left; background:url(../imagenes/fondo_imenu_sup.png) no-repeat; background-position:0 4px;}
+#cbinf_opcion ul a{ padding:5px; float:left; clear:both; font-size:16px; font-weight:bold; color:#000; font-family:"Courier New", Courier, monospace;}
+
+/* CONTENIDO */
+#cuerpo{ width:960px; float:left; padding:15px; background-color:#F3F3E7;}
+#panel_izq{ width:225px; float:left; padding:0 15px 0 0;}
+#panel_der{ width:720PX; float:left;}
+#panel_izq .item_pizq{ width:225px; float:left; margin:0 0 15px 0;}
+
+/* CATEGORIA */
+#categoria_cabecera{ width:225px; height:35px; float:left; background:url(../imagenes/item_categorias.png) no-repeat; text-indent:-1000em;}
+#categoria_contenido{ width:223px; float:left; border:1px solid #990000; border-top:none;}
+#categoria_contenido ul li{ display:block; float:left; width:223px; height:35px; padding:0 0 2px 0;	background:url(../imagenes/fondo_items_categorias.gif) repeat-x; font-family:Tahoma, Geneva, sans-serif; font-size:15px; font-weight:bold;}
+#categoria_contenido ul li a{ display:block; float:left; width:203px; height:25px; padding:10px 0 0 25px; color:#000; background:url(../imagenes/item_categorias_circ.png) no-repeat; background-position:7px 12px;}
+#categoria_contenido ul li:hover{ background-position:0 -37px;}
+
+/* SLIDE SUPERIOR */
+#slide_superior{ width:716px; float:left; border:2px solid #CCCCCC !important; margin:0 0 15px 0 !important;}
+
+/* CONTENIDO PANEL DERECHA */
+#pder_contenido{ width:720px; float:left;}
+#pder_contenido .pderc_item{ width:228px; float:left; border:1px solid #999999; margin:0 0 15px 0; }
+#pder_contenido .pderc_item .pderci_imagen{ width:218px; float:left; padding:5px; }
+#pder_contenido .pderc_item .pderci_datos{ width:218px; height:43px; float:left; padding:5px; border-top:1px solid #999999; background:url(../imagenes/fondo_items_productos.png) repeat-x; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+
+/* ENCUESTA */
+#panel_encuesta{ width:225px; float:left;}
+#panel_encuesta #penc_cabecera{ width:225px; height:35px; float:left; background:url(../imagenes/item_encuesta.png) no-repeat; text-indent:-1000em;}
+#panel_encuesta #penc_resultado{ width:213px; float:left; padding:5px; border:1px solid #990000; border-top:none; background-color:#A2C4C1;}
+#panel_encuesta #pe_pregunta{ width:213px; float:left; color:#000; font-size:16px; font-weight:bold; text-align:center; padding:5px 0;}
+#panel_encuesta #pe_opciones{ width:213px; float:left; text-align:left; color:#000; }
+#panel_encuesta #pe_opciones p{ line-height:150%; color:#000;}
+#panel_encuesta #pe_item_opciones{ margin:5px 0; text-align:left; }
+#panel_encuesta .pe_item_opciones p{ line-height:150%; color:#000;}
+#panel_encuesta .bar{ height:10px; background:#3399cc; }
+#panel_encuesta .yourvote{ background:#113399;}
+#panel_encuesta #loader{ display:none; text-align:center;}
+
+/* NOTICIA WEB */
+#notweb{ width:720px; float:left;}
+#notweb_titulo, #notweb_imagen, #notweb_descripcion{ width:720px; float:left;}
+#notweb_descripcion p{ line-height:150%; font-size:14px;}
+#notweb_descripcion iframe#mapa{ border:5px solid #999;}
+#notweb_titulo{ margin:0 0 5px 0; border-bottom:1px solid #666;}
+
+/* FORMULARIO */
+form fieldset{ width:720px; padding:5px 0; }
+form fieldset label{ width:200px; float:left; text-align:right; padding:5px 5px 0 0; font-weight:bold;}
+form fieldset input, form fieldset textarea{ padding:3px;}
+form fieldset input#btnenviar{ padding:5px 15px;}
